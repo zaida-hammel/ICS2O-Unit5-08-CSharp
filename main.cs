@@ -8,7 +8,6 @@ class Program
 {
     public static void Main(string[] args)
     {
-    
         int counter1 = 0;
         int counter2 = 0;
         var addedNumber = 0;
@@ -19,9 +18,10 @@ class Program
         answer = counter1;
         Console.Write("Input a number: ");
         counter2 = Convert.ToInt32(Console.ReadLine());
-        
-        if (counter1 > 0 && counter2 > 0) {
-            while (answer >= counter2) {
+        if (counter1 > 0 && counter2 > 0)
+        {
+            while (answer >= counter2)
+            {
                 addedNumber = addedNumber + 1;
                 answer = answer - counter2;
             }
