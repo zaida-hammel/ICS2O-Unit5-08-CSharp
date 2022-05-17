@@ -19,15 +19,14 @@ class Program
         Console.Write("Input a number: ");
         counter2 = Convert.ToInt32(Console.ReadLine());
         
-        if (counter1 > 0 && counter2 > 0)
-        {
-            while (answer >= counter2)
-            {
+        if (counter1 > 0 && counter2 > 0) {
+            while (answer > counter2) {
                 addedNumber = addedNumber + 1;
                 answer = answer - counter2;
             }
         }
 
         Console.WriteLine("The answer is: " + counter1 + " ÷ " + counter2 + " = " + addedNumber);
+        Console.Write("Done.");
     }
 }
